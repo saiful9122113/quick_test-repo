@@ -43,7 +43,7 @@ const Header = () => {
               <p> FlowChart</p>
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
               to='/blog'
               aria-label='About Us'
@@ -52,7 +52,7 @@ const Header = () => {
             >
               Blog
             </NavLink>
-          </li> */}
+          </li>
         </ul>
         <div className='lg:hidden'>
           <button

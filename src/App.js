@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-// import Blog from './components/Blog/Blog';
+import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import FlowCart from './components/FlowCart/FlowCart';
 import { GetQuizAndDynamicId } from './components/GetQuizAndDynamicId/GetQuizAndDynamicId';
@@ -39,6 +39,11 @@ function App() {
           path: 'flowCart',
           element: <FlowCart></FlowCart>,
         },
+
+        {
+          path: 'blog',
+          element: <Blog></Blog>
+        }
        
       ]
     }
