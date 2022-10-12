@@ -36,7 +36,7 @@ const Question = ({ question}) => {
                 {
                     options.map((option, idx) => <li
                         onClick={(e)=>handleCorrectAnswer(e.target.innerText)}
-                        className="bg-pink-600 no-underline list-none my-3 py-2 rounded-2xl shadow-xl font-semibold text-white cursor-pointer hover:bg-sky-700 duration-500" key={idx}>{option}</li>)
+                        className="bg-green-600 no-underline list-none my-3 py-2 rounded-2xl shadow-xl font-semibold text-white cursor-pointer hover:bg-sky-700 duration-500" key={idx}>{option}</li>)
                 }
             </div>
 

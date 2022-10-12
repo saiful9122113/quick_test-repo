@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className='home-container'>
             <div className='header-container'>
-                <h1 className='text-5xl font-bold space-y-5 py-10 text-pink-600'>Congratulations and best wishes for visiting <br></br> my Quiz Contest Block website.</h1>
+                <h1 className='text-5xl font-bold space-y-5 py-10 text-green-600'>Hey Hero, <br></br>Check your preparation here.</h1>
                 <img className='w-4/5 mx-auto h-96 rounded-lg' src={image} alt="" />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10 w-3/5 mx-auto'>

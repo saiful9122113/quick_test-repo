@@ -35,7 +35,7 @@ const ErrorPage = () => {
             <span className='sr-only'>Error</span>404
           </h2>
           <p className='text-2xl font-semibold md:text-3xl mb-8'>
-            Sorry, we couldn't find this page.
+            Sorry, This route not in here.Please press the button to go back
           </p>
           <Link
             to='/'

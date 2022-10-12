@@ -20,7 +20,7 @@ const Header = () => {
           <img className='w-14 md:w-14 rounded-full' src={Images} alt="main-logo" />
            
           <span className='ml-2 text-lg md:text-xl font-bold tracking-wide text-white uppercase'>
-            Quiz Context
+            Quick Test
           </span>
         </NavLink>
         <ul className='flex items-center hidden space-x-8 lg:flex'>

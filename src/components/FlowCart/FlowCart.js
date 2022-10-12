@@ -20,7 +20,7 @@ const FlowCart = () => {
                     <YAxis />
                     <Tooltip />
                     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                    <Bar dataKey="total" fill="#F472B6" barSize={30} />
+                    <Bar dataKey="total" fill="#007500" barSize={30} />
                 </BarChart>
             </ResponsiveContainer>
 
