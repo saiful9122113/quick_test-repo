@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 // import Blog from './components/Blog/Blog';
 import ErrorPage from './components/ErrorPage/ErrorPage';
-// import FlowCart from './components/FlowCart/FlowCart';
+import FlowCart from './components/FlowCart/FlowCart';
 import { GetQuizAndDynamicId } from './components/GetQuizAndDynamicId/GetQuizAndDynamicId';
 import Home from './components/Home/Home';
 import { QuizPractice } from './components/QuizPractice/QuizPractice';
@@ -35,10 +35,10 @@ function App() {
           element: <QuizPractice></QuizPractice>,
         },
 
-        // {
-        //   path: 'flowCart',
-        //   element: <FlowCart></FlowCart>,
-        // },
+        {
+          path: 'flowCart',
+          element: <FlowCart></FlowCart>,
+        },
        
       ]
     }

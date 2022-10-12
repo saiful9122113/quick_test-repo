@@ -33,7 +33,7 @@ const Header = () => {
               Home
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
               to='/flowCart'
               aria-label='Cart'
@@ -42,7 +42,7 @@ const Header = () => {
             >
               <p> FlowChart</p>
             </NavLink>
-          </li> */}
+          </li>
           {/* <li>
             <NavLink
               to='/blog'
