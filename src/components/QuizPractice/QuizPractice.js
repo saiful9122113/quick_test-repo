@@ -1,6 +1,6 @@
 import React from "react"
 import { useLoaderData } from 'react-router-dom';
-// import { Question } from "../Question/Question";
+import { Question } from "../Question/Question";
 
 
 const QuizPractice = () =>{
@@ -14,11 +14,11 @@ const QuizPractice = () =>{
             <h1 className="font-bold text-4xl py-10">{ quizName}</h1>
             <div className="my-3">
                 {
-                    // questions.map(question => <Question
-                    //     key={question.id}
-                    //     question={question}
-                    //     quizName={quizName}
-                    // ></Question>)
+                    questions.map(question => <Question
+                        key={question.id}
+                        question={question}
+                        quizName={quizName}
+                    ></Question>)
                 }
             </div>
         </div>
