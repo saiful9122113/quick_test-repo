@@ -5,7 +5,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 // import FlowCart from './components/FlowCart/FlowCart';
 import { GetQuizAndDynamicId } from './components/GetQuizAndDynamicId/GetQuizAndDynamicId';
 import Home from './components/Home/Home';
-// import { QuizPractice } from './components/QuizPractice/QuizPractice';
+import { QuizPractice } from './components/QuizPractice/QuizPractice';
 import Root from './components/Root/Root';
 
 function App() {
@@ -27,13 +27,13 @@ function App() {
         },
 
 
-        // {
-        //   path: '/quiz/:id',
-        //   loader: ({ params }) => {
-        //     return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
-        //   },
-        //   element: <QuizPractice></QuizPractice>,
-        // },
+        {
+          path: '/quiz/:id',
+          loader: ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <QuizPractice></QuizPractice>,
+        },
 
         // {
         //   path: 'flowCart',
