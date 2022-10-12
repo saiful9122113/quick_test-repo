@@ -1,0 +1,26 @@
+.header-conater{
+    background-color: #1C2B35;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: block;
+    color: #fff;
+}
+
+.header-conater a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+}
+
+.header-container a{
+    color: #000;
+}
+
+.active{
+    background: #F472B6;
+}
+

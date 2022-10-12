@@ -1,37 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Main from './components/Main/Main';
+import './App.css';
+// import Blog from './components/Blog/Blog';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+// import FlowCart from './components/FlowCart/FlowCart';
+import { GetQuizAndDynamicId } from './components/GetQuizAndDynamicId/GetQuizAndDynamicId';
 import Home from './components/Home/Home';
-import Statistics from './components/Statistics/Statistics';
-import Blog from './components/Blog/Blog';
+// import { QuizPractice } from './components/QuizPractice/QuizPractice';
+import Root from './components/Root/Root';
 
 function App() {
-  const router=createBrowserRouter([
+
+  const router = createBrowserRouter([
     {
-      path:'/',
-      element:<Main></Main>,
-      children:[
+      path: '/',
+      loader: GetQuizAndDynamicId,
+      element: <Root></Root>,
+      errorElement: <ErrorPage></ErrorPage>,
+      children: [
         {
-          path:'/',
-          element:<Home></Home>
+          path: '/',
+          element: <Home></Home>,
         },
         {
-          path:'/statistics',
-          element:<Statistics></Statistics>
+          path: 'home',
+          element: <Home></Home>,
         },
-        {
-          path:'/blog',
-          element:<Blog></Blog>
-        }
+
+
+        // {
+        //   path: '/quiz/:id',
+        //   loader: ({ params }) => {
+        //     return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+        //   },
+        //   element: <QuizPractice></QuizPractice>,
+        // },
+
+        // {
+        //   path: 'flowCart',
+        //   element: <FlowCart></FlowCart>,
+        // },
+       
       ]
     }
   ])
+
   return (
-    <div className="App">
-      {/* <NavBar></NavBar> */}
-        <RouterProvider router={router}></RouterProvider>
+    <div className="App bg-slate-200">
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
